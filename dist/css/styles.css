@@ -34,19 +34,19 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
+  --bs-primary: #7e805d;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
+  --bs-warning: #735C99;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
+  --bs-primary-rgb: 120, 100, 56;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
+  --bs-warning-rgb: 115, 92, 153;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
@@ -118,7 +118,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
-  color: #343a40;
+  color: #5f5c36;
 }
 
 h1, .h1 {
@@ -127,6 +127,7 @@ h1, .h1 {
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 6rem;
+    color: #bdb76b;
   }
 }
 
@@ -570,8 +571,19 @@ progress {
 }
 
 .list-inline-item {
-  display: inline-block;
+  display: inline-flex;
+  border: 3px solid;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-color: grey;
+	
 }
+
+
+
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
@@ -4141,9 +4153,9 @@ textarea.form-control-lg {
 
 .navbar-dark {
   --bs-navbar-color: rgba(255, 255, 255, 0.55);
-  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+  --bs-navbar-hover-color: rgba(100, 100, 100, 1);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-  --bs-navbar-active-color: #fff;
+  --bs-navbar-active-color: #aaa560;
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
@@ -8265,7 +8277,7 @@ textarea.form-control-lg {
 }
 
 .rounded-circle {
-  border-radius: 50% !important;
+  border-radius: 25% !important;
 }
 
 .rounded-pill {
@@ -8841,6 +8853,8 @@ textarea.form-control-lg {
   }
   .flex-md-row {
     flex-direction: row !important;
+    background-color: #eeebe2;
+    padding: 15px;
   }
   .flex-md-column {
     flex-direction: column !important;
@@ -10927,7 +10941,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #bdb76b;
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -10937,7 +10951,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #5f5c36;
 }
 
 .dev-icons {
@@ -10952,9 +10966,12 @@ section.resume-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
+  background: #dcd5c3;
 }
 section.resume-section .resume-section-content {
   width: 100%;
+  background: #eeebe2;
+  padding: 15px;
 }
 
 @media (min-width: 768px) {
